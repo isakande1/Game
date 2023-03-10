@@ -134,11 +134,6 @@ public class Game{
 			System.out.print( "What is your name : ");// ask the user to type his name.
 			NAME = console.next(); // attribute the next input string to NAME
 			
-			
-			
-			
-			
-			
 			explain(); // callthe explain method to explain the rules of the game
 			System.out.print( " Enter a number for how many rounds to play : "); // ask the user input for how many times to play the game
 			
@@ -186,8 +181,6 @@ public class Game{
 			choice = userChoice(); // attrbute userChoice(); to choice
 			System.out.println( "     "+  NAME + ", chose " + choice);
 			System.out.println( "     The computer chose "+ choice2); // display the human and the computer choice
-					
-			
 			
 			int result = winner(choice, choice2);// attrbute winner to result
 			
@@ -209,10 +202,6 @@ public class Game{
 			System.out.println( " You won "+won+" time(s)"); // print number of wins
 			System.out.println( " you tied " +tie+ " time(s)"); // print number of ties
 			System.out.println( " you lost "+loss+ " time(s)"); // print number of loss
-			
-			
-			
-		 
 			
 			// display the reccord of the game.
 			System.out.println();
@@ -238,9 +227,6 @@ public class Game{
 			else {
 			Scanner read = new Scanner(f); // create a scanner object to read from the file
 			int i = 2;
-			
-			
-			
 			won =  read.nextInt() + won; // concatenate the wins in the actual game to the wins of the previous game
 			tie= read.nextInt()+ tie;//concatenate the ties in the actual game to the ties of the previous game
 			loss= read.nextInt() + loss; // concatenate the loss in the actual game to the loss of the previous game
@@ -265,25 +251,7 @@ public class Game{
 			  
 		   } 
 		   
-					   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-			
-			
+		
 			PrintStream newfile = new PrintStream(f);// Set the size of the existing  file f to zero
 			                                         // and update the total records of the game
 		
